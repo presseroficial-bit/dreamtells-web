@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand Palette - Mystical & Premium */
+  --color-bg-deep: #05050A;
+  --color-bg-surface: #0F0F16;
+  --color-primary: #8A2BE2;
+  /* BlueViolet */
+  --color-primary-glow: #8A2BE280;
+  --color-accent: #00F0FF;
+  /* Cyan Neon */
+  --color-accent-glow: #00F0FF80;
+  --color-text-main: #FFFFFF;
+  --color-text-muted: #A0A0B0;
+
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
+  --gradient-text: linear-gradient(90deg, #FFFFFF 0%, #E0E0FF 100%);
+
+  /* Spacing & Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--color-text-main);
+  background-color: var(--color-bg-deep);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Celestial Background: Deep Night Sky Global */
+  background: radial-gradient(circle at 50% 10%, #1a1a40 0%, #050510 100%);
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Global Stars Effect */
+body::before {
+  content: '';
+  position: fixed;
+  /* Fixed so stars stay while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(1px 1px at 10% 10%, #fff 100%, transparent),
+    radial-gradient(1px 1px at 20% 20%, #fff 100%, transparent),
+    radial-gradient(2px 2px at 30% 60%, #fff 100%, transparent),
+    radial-gradient(1px 1px at 40% 40%, #fff 100%, transparent),
+    radial-gradient(2px 2px at 50% 80%, #fff 100%, transparent),
+    radial-gradient(1px 1px at 60% 30%, #fff 100%, transparent),
+    radial-gradient(2px 2px at 70% 70%, #fff 100%, transparent),
+    radial-gradient(1px 1px at 80% 20%, #fff 100%, transparent),
+    radial-gradient(1px 1px at 90% 90%, #fff 100%, transparent);
+  background-size: 550px 550px;
+  opacity: 0.6;
+  animation: starsTwinkle 100s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes starsTwinkle {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-550px);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050510;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Animation Utilities */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

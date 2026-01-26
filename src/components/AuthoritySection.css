@@ -1,0 +1,75 @@
+.authority-section {
+    padding: 8rem 2rem;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.authority-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.authority-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.authority-header h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.authority-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.authority-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 2rem;
+    transition: all 0.3s ease;
+}
+
+.authority-card:hover {
+    border-left-color: var(--color-accent);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+}
+
+.authority-icon-wrapper {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.authority-card h3 {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.authority-card p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .authority-section {
+        padding: 4rem 2rem;
+    }
+
+    .authority-header h2 {
+        font-size: 2rem;
+    }
+}

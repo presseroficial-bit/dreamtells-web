@@ -1,0 +1,119 @@
+.demo-section {
+    padding: 6rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.demo-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.demo-icon-top {
+    color: var(--color-accent);
+}
+
+.demo-header h2 {
+    font-size: 2.5rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    /* AI side slightly larger */
+    gap: 2rem;
+    align-items: center;
+}
+
+.demo-card {
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    position: relative;
+}
+
+/* User Input Card */
+.input-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.demo-text-input {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* AI Output Card */
+.output-card {
+    background: rgba(138, 43, 226, 0.08);
+    /* Tiny bit of purple tint */
+    border: 1px solid rgba(138, 43, 226, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.demo-text-output {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.ai-icon-inline {
+    color: var(--color-accent);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.demo-text-output p {
+    color: #fff;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.card-label {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.user-dot {
+    background: #555;
+}
+
+.ai-dot {
+    background: var(--color-accent);
+    box-shadow: 0 0 8px var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-header h2 {
+        font-size: 2rem;
+    }
+}
