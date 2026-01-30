@@ -66,19 +66,6 @@ export const Hero = () => {
                         </button>
                     </motion.div>
                 </div>
-
-                <div className="hero-visual">
-                    {/* Abstract glowing forms representing a dream */}
-                    <div className="orb orb-1"></div>
-                    <div className="orb orb-2"></div>
-                    <div className="glass-card-mockup">
-                        <img
-                            src="/app-mockup.png"
-                            alt="DreamTells App Interface"
-                            className="mockup-image"
-                        />
-                    </div>
-                </div>
             </div>
         </section>
     );
