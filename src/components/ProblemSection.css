@@ -1,5 +1,5 @@
 .problem-section {
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
     max-width: var(--container-width);
     margin: 0 auto;
 }
@@ -10,71 +10,86 @@
 }
 
 .problem-header h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 800;
     margin-bottom: 1rem;
-    color: #fff;
+    background: linear-gradient(to right, #fff, #b0b0d0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .comparison-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
 .comparison-card {
     flex: 1;
-    min-width: 300px;
+    min-width: 320px;
     max-width: 500px;
-    padding: 3rem;
-    border-radius: var(--radius-lg);
+    padding: 3.5rem 3rem;
+    border-radius: 32px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    transition: all 0.3s ease;
+    gap: 2rem;
+    transition: all 0.4s ease;
 }
 
 /* Generic Card style (Dimmed, Gray) */
 .comparison-card.generic {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .comparison-card.generic:hover {
-    opacity: 0.9;
+    opacity: 0.8;
+    transform: translateY(-5px);
 }
 
 .card-header-problem {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .card-header-problem h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 .icon-problem {
-    padding: 6px;
-    border-radius: 50%;
+    padding: 10px;
+    border-radius: 16px;
 }
 
 .x-icon {
-    background: rgba(255, 59, 48, 0.1);
+    background: rgba(255, 59, 48, 0.05);
     color: #ff3b30;
-    border: 1px solid rgba(255, 59, 48, 0.3);
+    border: 1px solid rgba(255, 59, 48, 0.2);
 }
 
 /* DreamTells Card style (Premium, Glowing) */
 .comparison-card.dreamtells {
-    background: rgba(15, 15, 22, 0.8);
-    border: 1px solid rgba(138, 43, 226, 0.3);
-    box-shadow: 0 0 30px rgba(138, 43, 226, 0.1);
+    background: rgba(138, 43, 226, 0.05);
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(138, 43, 226, 0.1);
     position: relative;
     overflow: hidden;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+}
+
+.comparison-card.dreamtells:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.5),
+        0 0 60px rgba(138, 43, 226, 0.2);
+    border-color: rgba(138, 43, 226, 0.4);
 }
 
 .comparison-card.dreamtells::before {
@@ -94,21 +109,24 @@
 }
 
 .comparison-card p {
-    font-size: 1.1rem;
-    color: var(--color-text-muted);
-    line-height: 1.6;
+    font-size: 1.15rem;
+    color: #b0b0d0;
+    line-height: 1.7;
 }
 
 .comparison-card.dreamtells p {
     color: #fff;
+    font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .problem-header h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .comparison-container {
         flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
 }

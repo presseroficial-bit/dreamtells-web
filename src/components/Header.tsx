@@ -25,6 +25,7 @@ export const Header = () => {
                 <nav className="header-nav">
                     <a href="#o-problema" className="nav-link">{t('nav.problem')}</a>
                     <a href="#metodologia" className="nav-link">{t('nav.methodology')}</a>
+                    <a href="#mapa" className="nav-link">{t('nav.map')}</a>
                     <a href="#depoimentos" className="nav-link">{t('nav.testimonials')}</a>
                     <a href="#faq" className="nav-link">{t('nav.faq')}</a>
                 </nav>

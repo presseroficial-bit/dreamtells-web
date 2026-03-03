@@ -13,6 +13,7 @@ import { FAQ } from './components/FAQ'
 import { FinalCTA } from './components/FinalCTA'
 import { Footer } from './components/Footer'
 import { AppShowcase } from './components/AppShowcase'
+import { MapOfUnconscious } from './components/MapOfUnconscious'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <main className="main-content">
           <Hero />
           <AppShowcase />
+          <MapOfUnconscious />
           <ProblemSection />
           <DemoSection />
           <AuthoritySection />

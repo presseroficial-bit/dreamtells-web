@@ -50,21 +50,22 @@ export const Hero = () => {
                         {t('hero.subtitle')}
                     </motion.p>
 
-                    <motion.div
-                        className="hero-actions"
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                    >
-                        <button className="btn btn-primary">
+                    <div className="hero-actions">
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.dreamtells.sonhos"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                            style={{ pointerEvents: 'auto', position: 'relative', zIndex: 9999 }}
+                        >
                             {t('hero.btn.download')}
                             <Download size={20} />
-                        </button>
+                        </a>
                         <button className="btn btn-secondary">
                             {t('hero.btn.how')}
                             <ArrowRight size={20} />
                         </button>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

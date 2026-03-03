@@ -1,4 +1,4 @@
-import { Github, Twitter, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Youtube } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import './Footer.css';
 
@@ -34,9 +34,9 @@ export const Footer = () => {
                 </div>
 
                 <div className="footer-social">
-                    <a href="#" aria-label="Github"><Github size={20} /></a>
-                    <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
-                    <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
+                    <a href="https://www.facebook.com/dreamtells" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={32} /></a>
+                    <a href="https://www.instagram.com/dreamtellsoficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={32} /></a>
+                    <a href="https://www.youtube.com/@DreamTellsSonhos" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><Youtube size={32} /></a>
                 </div>
             </div>
 

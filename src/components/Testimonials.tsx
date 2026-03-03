@@ -11,24 +11,28 @@ export const Testimonials = () => {
             text: t('test1.text'),
             author: t('test1.author'),
             role: t('test1.role'),
+            avatar: '/lucas.jpg',
             delay: 0.2
         },
         {
             text: t('test2.text'),
             author: t('test2.author'),
             role: t('test2.role'),
+            avatar: '/juliana.jpg',
             delay: 0.4
         },
         {
             text: t('test3.text'),
             author: t('test3.author'),
             role: t('test3.role'),
+            avatar: '/roberto.jpg',
             delay: 0.6
         }
     ];
 
     return (
         <section className="testimonials-section" id="depoimentos">
+            <div className="section-decoration-bg"></div>
             <div className="testimonials-header">
                 <span className="testimonials-badge">{t('testimonials.badge')}</span>
                 <h2 className="testimonials-title">{t('testimonials.title')}</h2>
@@ -47,7 +51,9 @@ export const Testimonials = () => {
                         <Quote size={32} className="quote-icon" />
                         <p className="testimonial-text">"{test.text}"</p>
                         <div className="testimonial-author">
-                            <div className="author-avatar">{test.author.charAt(0)}</div>
+                            <div className="author-avatar">
+                                <img src={test.avatar} alt={test.author} className="author-avatar-img" />
+                            </div>
                             <div>
                                 <h4>{test.author}</h4>
                                 <span>{test.role}</span>

@@ -24,6 +24,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.problem': 'O Problema',
     'nav.methodology': 'Metodologia',
     'nav.testimonials': 'Depoimentos',
+    'nav.map': 'O Mapa',
     'nav.faq': 'FAQ',
 
     // Hero - Diferenciação Absoluta
@@ -105,6 +106,8 @@ const translations: Record<Language, Record<string, string>> = {
     'features.card2.desc': 'Seus sonhos formam uma narrativa. Acompanhe sua evolução emocional ao longo das semanas.',
     'features.card3.title': 'Diagnóstico da Psique',
     'features.card3.desc': 'Relatórios periódicos sobre seus temas recorrentes (ansiedade, sombra, anima/animus).',
+    'features.card4.title': 'Conectividade Total',
+    'features.card4.desc': 'Integrado com Apple Watch e Android Wear via Health Connect para capturar dados biométricos durante o sono.',
 
     // How it works (Simpler)
     'how.badge': 'Método',
@@ -115,12 +118,21 @@ const translations: Record<Language, Record<string, string>> = {
     'how.step2.desc': 'A IA cruza símbolos com seu contexto.',
     'how.step3.title': 'Integre',
     'how.step3.desc': 'Traga o insight para sua vida desperta.',
+
+    // Map of the Unconscious
+    'map.badge': 'Recurso Exclusivo',
+    'map.title': 'O Mapa do Seu Inconsciente',
+    'map.subtitle': 'Muito além de uma lista de sonhos. Visualize os territórios inexplorados da sua mente em um mapa dinâmico que revela como suas emoções, medos e desejos se conectam através do tempo.',
+    'map.feature1': 'Constelações Temáticas',
+    'map.feature2': 'Navegação por Arquétipos',
+    'map.feature3': 'Evolução da Psique',
   },
   en: {
     // Navigation
     'nav.problem': 'The Problem',
     'nav.methodology': 'Methodology',
     'nav.testimonials': 'Testimonials',
+    'nav.map': 'The Map',
     'nav.faq': 'FAQ',
 
     // Hero - Absolute Differentiation
@@ -201,6 +213,8 @@ const translations: Record<Language, Record<string, string>> = {
     'features.card2.desc': 'Your dreams form a narrative. Track your emotional evolution over the weeks.',
     'features.card3.title': 'Psyche Diagnosis',
     'features.card3.desc': 'Periodic reports on your recurring themes (anxiety, shadow, anima/animus).',
+    'features.card4.title': 'Total Connectivity',
+    'features.card4.desc': 'Integrated with Apple Watch and Android Wear via Health Connect to capture biometric data during sleep.',
 
     // How it works
     'how.badge': 'Method',
@@ -211,6 +225,14 @@ const translations: Record<Language, Record<string, string>> = {
     'how.step2.desc': 'AI crosses symbols with your context.',
     'how.step3.title': 'Integrate',
     'how.step3.desc': 'Bring the insight into your waking life.',
+
+    // Map of the Unconscious
+    'map.badge': 'Exclusive Feature',
+    'map.title': 'The Map of Your Unconscious',
+    'map.subtitle': 'Far beyond a list of dreams. Visualize the unexplored territories of your mind in a dynamic map that reveals how your emotions, fears, and desires connect over time.',
+    'map.feature1': 'Thematic Constellations',
+    'map.feature2': 'Archetypal Navigation',
+    'map.feature3': 'Psyche Evolution',
   }
 };
 

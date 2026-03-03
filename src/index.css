@@ -52,8 +52,10 @@ body {
   display: block;
   min-width: 320px;
   min-height: 100vh;
-  /* Celestial Background: Deep Night Sky Global */
-  background: radial-gradient(circle at 50% 10%, #1a1a40 0%, #050510 100%);
+  /* Celestial Background: High-end Nebula Image + Gradient */
+  background:
+    radial-gradient(circle at 50% 10%, rgba(26, 26, 64, 0.4) 0%, rgba(5, 5, 16, 0.4) 100%),
+    url('/assets/celestial-clouds.png') center/cover no-repeat fixed;
   color: #fff;
   overflow-x: hidden;
   position: relative;
@@ -203,4 +205,34 @@ button:focus-visible {
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Mystical Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+}
+
+.gold-glow {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.15);
+}
+
+.purple-glow {
+  box-shadow: 0 0 30px rgba(138, 43, 226, 0.2);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFD700 0%, #FDB931 50%, #C09000 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #fff 0%, #a060ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

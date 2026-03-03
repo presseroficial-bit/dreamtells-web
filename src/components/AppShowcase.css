@@ -1,8 +1,6 @@
 .showcase-section {
-    padding: 0 2rem 8rem;
+    padding: 2rem 2rem 8rem;
     position: relative;
-    margin-top: -4rem;
-    /* Move up closer to Hero buttons */
     overflow: visible;
 }
 

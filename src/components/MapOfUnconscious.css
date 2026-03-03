@@ -1,0 +1,217 @@
+.map-section {
+    padding: 10rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.map-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(138, 43, 226, 0.1);
+    border: 1px solid rgba(138, 43, 226, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.map-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.map-description {
+    font-size: 1.25rem;
+    color: #b0b0d0;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.map-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.map-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.map-feature-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(138, 43, 226, 0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+}
+
+/* Visualization Container - THE PREMIUM MAP */
+.map-visual-container {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.map-visual-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.map-visual-placeholder {
+    width: 100%;
+    height: 100%;
+    background: url('/assets/map-visualization.png') center/cover no-repeat;
+    /* We can also try mix-blend-mode if the background of the image is black */
+    /* mix-blend-mode: screen; */
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    box-shadow:
+        0 40px 100px rgba(0, 0, 0, 0.8),
+        inset 0 0 80px rgba(138, 43, 226, 0.15);
+}
+
+/* Subtle overlay glow to make it pop */
+.map-visual-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 30%, rgba(5, 5, 15, 0.6) 100%);
+    z-index: 1;
+}
+
+.nebula-bg {
+    display: none;
+    /* Replaced by the high-end image */
+}
+
+.map-node {
+    position: absolute;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.node-1 {
+    top: 25%;
+    left: 15%;
+    border-color: rgba(255, 215, 0, 0.4);
+}
+
+.node-2 {
+    top: 50%;
+    left: 60%;
+    border-color: rgba(0, 240, 255, 0.4);
+}
+
+.node-3 {
+    top: 70%;
+    left: 30%;
+    border-color: rgba(138, 43, 226, 0.4);
+}
+
+.connection {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.2), transparent);
+    height: 1px;
+    transform-origin: left center;
+    z-index: 5;
+}
+
+.conn-1 {
+    width: 140px;
+    top: 35%;
+    left: 20%;
+    transform: rotate(10deg);
+}
+
+.floating-ui {
+    position: absolute;
+    background: rgba(138, 43, 226, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(138, 43, 226, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    z-index: 15;
+}
+
+.ui-1 {
+    top: 10%;
+    right: -5%;
+}
+
+.ui-2 {
+    bottom: 15%;
+    left: -5%;
+}
+
+.ui-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    box-shadow: 0 0 10px var(--color-accent);
+}
+
+@media (max-width: 968px) {
+    .map-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .map-title {
+        font-size: 3rem;
+    }
+
+    .map-badge,
+    .map-feature-item {
+        justify-content: center;
+    }
+
+    .map-visual-container {
+        height: 450px;
+    }
+}

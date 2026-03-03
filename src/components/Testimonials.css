@@ -1,7 +1,27 @@
 .testimonials-section {
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
     max-width: var(--container-width);
     margin: 0 auto;
+    position: relative;
+    /* For the background decoration */
+    overflow: visible;
+}
+
+.section-decoration-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: url('/assets/dream-symbols.png') center/contain no-repeat;
+    opacity: 0.8;
+    /* Increased from 0.15 */
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 0;
+    /* Changed from -1 to be just behind cards but above section bg */
+    filter: brightness(1.5);
 }
 
 .testimonials-header {
@@ -77,6 +97,15 @@
     font-weight: 700;
     font-size: 1.2rem;
     color: #fff;
+    overflow: hidden;
+    /* Ensure image is clipped to circle */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .testimonial-author h4 {

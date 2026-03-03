@@ -68,17 +68,60 @@
 
 .footer-social {
     display: flex;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 .footer-social a {
-    color: var(--color-text-muted);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
 }
 
+/* Fixed Brand Colors and Subtle Borders */
+.footer-social a[aria-label="Facebook"] {
+    color: #1877F2;
+    border: 1px solid rgba(24, 119, 242, 0.3);
+}
+
+.footer-social a[aria-label="Instagram"] {
+    color: #E4405F;
+    border: 1px solid rgba(228, 64, 95, 0.3);
+}
+
+.footer-social a[aria-label="Youtube"] {
+    color: #FF0000;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+/* "Light Up" Animation on Hover */
 .footer-social a:hover {
-    color: #fff;
-    transform: translateY(-2px);
+    transform: translateY(-8px) scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social a[aria-label="Facebook"]:hover {
+    box-shadow: 0 0 25px rgba(24, 119, 242, 0.6);
+    border-color: #1877F2;
+    filter: brightness(1.2);
+}
+
+.footer-social a[aria-label="Instagram"]:hover {
+    box-shadow: 0 0 25px rgba(228, 64, 95, 0.6);
+    border-color: #E4405F;
+    filter: brightness(1.2);
+}
+
+.footer-social a[aria-label="Youtube"]:hover {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+    border-color: #FF0000;
+    filter: brightness(1.2);
 }
 
 .footer-bottom {
