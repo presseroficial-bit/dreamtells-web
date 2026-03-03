@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { BookOpen, Brain, GitCommit } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import './AuthoritySection.css';
 
@@ -8,19 +7,19 @@ export const AuthoritySection = () => {
 
     const cards = [
         {
-            icon: <BookOpen size={32} />,
+            image: '/assets/pillar-decoding.png',
             title: t('authority.card1.title'),
             desc: t('authority.card1.desc'),
             delay: 0.2
         },
         {
-            icon: <Brain size={32} />,
+            image: '/assets/pillar-journal.png',
             title: t('authority.card2.title'),
             desc: t('authority.card2.desc'),
             delay: 0.4
         },
         {
-            icon: <GitCommit size={32} />,
+            image: '/assets/pillar-diagnosis.png',
             title: t('authority.card3.title'),
             desc: t('authority.card3.desc'),
             delay: 0.6
@@ -45,7 +44,7 @@ export const AuthoritySection = () => {
                         transition={{ duration: 0.6, delay: card.delay }}
                     >
                         <div className="authority-icon-wrapper">
-                            {card.icon}
+                            <img src={card.image} alt={card.title} className="authority-visual-image" />
                         </div>
                         <h3>{card.title}</h3>
                         <p>{card.desc}</p>

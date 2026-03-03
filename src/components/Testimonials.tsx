@@ -11,21 +11,21 @@ export const Testimonials = () => {
             text: t('test1.text'),
             author: t('test1.author'),
             role: t('test1.role'),
-            avatar: '/lucas.jpg',
+            avatar: '/avatar-1.jpg',
             delay: 0.2
         },
         {
             text: t('test2.text'),
             author: t('test2.author'),
             role: t('test2.role'),
-            avatar: '/juliana.jpg',
+            avatar: '/avatar-2.jpg',
             delay: 0.4
         },
         {
             text: t('test3.text'),
             author: t('test3.author'),
             role: t('test3.role'),
-            avatar: '/roberto.jpg',
+            avatar: '/avatar-3.jpg',
             delay: 0.6
         }
     ];
@@ -52,7 +52,7 @@ export const Testimonials = () => {
                         <p className="testimonial-text">"{test.text}"</p>
                         <div className="testimonial-author">
                             <div className="author-avatar">
-                                <img src={test.avatar} alt={test.author} className="author-avatar-img" />
+                                <img src={test.avatar} alt={test.author} className="avatar-img" />
                             </div>
                             <div>
                                 <h4>{test.author}</h4>
