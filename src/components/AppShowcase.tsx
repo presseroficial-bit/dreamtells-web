@@ -1,32 +1,35 @@
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
 import './AppShowcase.css';
 
 export const AppShowcase = () => {
+    const { t } = useLanguage();
+
     const screens = [
         {
             id: 'home',
             image: '/app-mockup.png',
-            label: 'Home'
+            label: t('showcase.home')
         },
         {
             id: 'history',
             image: '/screenshots/historico.jpg',
-            label: 'Histórico'
+            label: t('showcase.history')
         },
         {
             id: 'interpretation',
             image: '/screenshots/interpretacao.jpg',
-            label: 'Interpretação'
+            label: t('showcase.interpretation')
         },
         {
             id: 'diagnosis',
             image: '/screenshots/diagnostico.jpg',
-            label: 'Diagnóstico'
+            label: t('showcase.diagnosis')
         },
         {
             id: 'message',
             image: '/screenshots/mensagem.jpg',
-            label: 'Mensagem do Dia'
+            label: t('showcase.message')
         }
     ];
 

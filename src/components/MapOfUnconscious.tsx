@@ -65,8 +65,8 @@ export const MapOfUnconscious = () => {
                                         <div key={i} className={`star star-${i}`} />
                                     ))}
                                     <div className="map-node node-1"><span>{t('authority.card1.title')}</span></div>
-                                    <div className="map-node node-2"><span>Sombra</span></div>
-                                    <div className="map-node node-3"><span>Anima</span></div>
+                                    <div className="map-node node-2"><span>{t('map.node2')}</span></div>
+                                    <div className="map-node node-3"><span>{t('map.node3')}</span></div>
                                     <div className="connection conn-1" />
                                     <div className="connection conn-2" />
                                 </div>
@@ -80,7 +80,7 @@ export const MapOfUnconscious = () => {
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             >
                                 <div className="ui-dot" />
-                                <span>Padrão Detectado: Vôo</span>
+                                <span>{t('map.ui1')}</span>
                             </motion.div>
                             <motion.div
                                 className="floating-ui ui-2"
@@ -88,7 +88,7 @@ export const MapOfUnconscious = () => {
                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                             >
                                 <div className="ui-dot gold" />
-                                <span>Insight: Libertação</span>
+                                <span>{t('map.ui2')}</span>
                             </motion.div>
                         </div>
                     </motion.div>

@@ -126,6 +126,17 @@ const translations: Record<Language, Record<string, string>> = {
     'map.feature1': 'Constelações Temáticas',
     'map.feature2': 'Navegação por Arquétipos',
     'map.feature3': 'Evolução da Psique',
+    'map.node2': 'Sombra',
+    'map.node3': 'Anima',
+    'map.ui1': 'Padrão Detectado: Vôo',
+    'map.ui2': 'Insight: Libertação',
+
+    // App Showcase
+    'showcase.home': 'Home',
+    'showcase.history': 'Histórico',
+    'showcase.interpretation': 'Interpretação',
+    'showcase.diagnosis': 'Diagnóstico',
+    'showcase.message': 'Mensagem do Dia',
   },
   en: {
     // Navigation
@@ -233,6 +244,17 @@ const translations: Record<Language, Record<string, string>> = {
     'map.feature1': 'Thematic Constellations',
     'map.feature2': 'Archetypal Navigation',
     'map.feature3': 'Psyche Evolution',
+    'map.node2': 'Shadow',
+    'map.node3': 'Anima',
+    'map.ui1': 'Pattern Detected: Flight',
+    'map.ui2': 'Insight: Liberation',
+
+    // App Showcase
+    'showcase.home': 'Home',
+    'showcase.history': 'History',
+    'showcase.interpretation': 'Interpretation',
+    'showcase.diagnosis': 'Diagnosis',
+    'showcase.message': 'Message of the Day',
   }
 };
 
